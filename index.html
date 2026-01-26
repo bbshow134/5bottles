@@ -3,116 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт на GitHub</title>
+    <title>Лучший микрорайон Великого Новгорода</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!-- Шапка с названием микрорайона -->
+    <header class="main-header">
         <div class="header-content">
-            <h1><i class="fas fa-rocket"></i> Добро пожаловать на мой сайт!</h1>
-            <p>Здесь я делюсь своими проектами и знаниями</p>
-            <nav>
-                <a href="#about"><i class="fas fa-user"></i> Обо мне</a>
-                <a href="#projects"><i class="fas fa-code"></i> Проекты</a>
-                <a href="#skills"><i class="fas fa-cogs"></i> Навыки</a>
-                <a href="#contact"><i class="fas fa-envelope"></i> Контакты</a>
-            </nav>
+            <h1 class="neighborhood-name">Микрорайон "Волховский"</h1>
+            <p class="neighborhood-subtitle">Лучшее место для жизни в нашем городе</p>
         </div>
     </header>
 
-    <main>
-        <section id="about" class="card">
-            <h2><i class="fas fa-star"></i> Обо мне</h2>
+    <!-- Основной контент -->
+    <main class="container">
+        <!-- Блок с фотографией микрорайона -->
+        <section class="photo-section">
+            <div class="main-photo">
+                <!-- Замените src на URL вашей фотографии -->
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" 
+                     alt="Фотография микрорайона ">
+                <div class="photo-caption">Вид на микрорайон с высоты</div>
+            </div>
+        </section>
+
+        <!-- Текст о микрорайоне -->
+        <section class="about-section">
+            <h2><i class="fas fa-home"></i> О нашем микрорайоне</h2>
             <div class="about-content">
-                <img src="https://via.placeholder.com/150" alt="Моё фото" class="profile-img">
-                <div class="about-text">
-                    <p>Привет! Я начинающий веб-разработчик и этот сайт — моя первая работа на GitHub Pages.</p>
-                    <p>Здесь я буду публиковать свои проекты и эксперименты с кодом.</p>
-                    <a href="#contact" class="button">Связаться со мной</a>
-                </div>
+                <!-- НАЧАЛО: ВСТАВЬТЕ ВАШ ТЕКСТ ЗДЕСЬ -->
+                
+                <p>Добро пожаловать в микрорайон "Волховский" - буквально филиал рая если не на Земле, то точно в Великом Новгороде.
+                Данный сайт разработан с целью просвещения населения об этом творении богов =)</p>
+                
+                <p>Наш микрорайон был прекрасным местом, пока в него не пришел коммунизм: Роща, пруды, сады, тропы, различная живность.
+                Во времена Советского союза всё это было ликвидировано в угоду перспективных проектов многоквартирного жилья,
+                развития кирпичного завода, великого тролейбусного марщрута Волховский - Трубичино, сельского клуба, и конечно, гаражных кооперативов
+                
+                В наше время микрорайон стремится вернуть себе ту славу, которую у него отняли. Данный сайт поможет вам узнать, как поживает микрорайон поживает сейчас</p>
+                
+                <h3>Преимущества микрорайона:</h3>
+                <ul>
+                    <li>Их пока что нет</li>
+                </ul>
             </div>
         </section>
 
-        <section id="projects" class="card">
-            <h2><i class="fas fa-project-diagram"></i> Мои проекты</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Этот сайт</h3>
-                    <p>Мой первый сайт на GitHub Pages с использованием HTML и CSS</p>
-                    <span class="tech-tag">HTML</span>
-                    <span class="tech-tag">CSS</span>
-                    <span class="tech-tag">GitHub Pages</span>
+        
+        <!-- Контакты и информация -->
+        <section class="info-section">
+            <div class="info-cards">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Адрес</h3>
+                    <p>г. Великий Новгород. Мкрн. Волховский</p>
                 </div>
-                <div class="project-card">
-                    <h3>В процессе</h3>
-                    <p>Скоро здесь появятся новые интересные проекты</p>
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">React</span>
+                <div class="info-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Год основания</h3>
+                    <p>10 век</p>
                 </div>
-            </div>
-        </section>
-
-        <section id="skills" class="card">
-            <h2><i class="fas fa-chart-line"></i> Навыки</h2>
-            <div class="skills-list">
-                <div class="skill-item">
-                    <span>HTML5</span>
-                    <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <span>CSS3</span>
-                    <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <span>JavaScript</span>
-                    <div class="skill-bar"><div class="skill-level" style="width: 60%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <span>Git</span>
-                    <div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div>
+                <div class="info-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Количество жителей</h3>
+                    <p>около 4000 человек</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <aside class="sidebar">
-        <div class="card">
-            <h3><i class="fas fa-bullhorn"></i> Последние обновления</h3>
-            <ul class="updates-list">
-                <li><i class="fas fa-check-circle"></i> Добавлен адаптивный дизайн</li>
-                <li><i class="fas fa-check-circle"></i> Улучшена навигация</li>
-                <li><i class="fas fa-check-circle"></i> Добавлены анимации</li>
-            </ul>
-        </div>
-        
-        <div class="card">
-            <h3><i class="fas fa-link"></i> Полезные ссылки</h3>
-            <ul class="links-list">
-                <li><a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-                <li><a href="https://developer.mozilla.org" target="_blank"><i class="fas fa-code"></i> MDN Web Docs</a></li>
-                <li><a href="https://css-tricks.com" target="_blank"><i class="fab fa-css3-alt"></i> CSS Tricks</a></li>
-            </ul>
-        </div>
-    </aside>
-
-    <footer id="contact">
+    <!-- Подвал -->
+    <footer class="main-footer">
         <div class="footer-content">
-            <h3>Контакты</h3>
-            <div class="social-links">
-                <a href="mailto:your-email@example.com" class="social-link">
-                    <i class="fas fa-envelope"></i> Email
-                </a>
-                <a href="https://github.com/ваш-логин" class="social-link" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="#" class="social-link">
-                    <i class="fab fa-telegram"></i> Telegram
-                </a>
+            <p>&copy; 2026 Микрорайон "Волховский". Все права защищены.</p>
+            <p class="footer-note">Сайт создан жителем для всех =)</p>
+            <div class="social-icons">
+                <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
-            <p class="copyright">© 2024 Мой сайт на GitHub Pages. Все права защищены.</p>
-            <p class="counter">Посетителей сегодня: <span id="visitor-count">1</span></p>
         </div>
     </footer>
 
