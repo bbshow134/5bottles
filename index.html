@@ -1,10 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Мой сайт</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт на GitHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Привет, мир!</h1>
-    <p>Мой первый сайт на GitHub Pages</p>
+    <header>
+        <div class="header-content">
+            <h1><i class="fas fa-rocket"></i> Добро пожаловать на мой сайт!</h1>
+            <p>Здесь я делюсь своими проектами и знаниями</p>
+            <nav>
+                <a href="#about"><i class="fas fa-user"></i> Обо мне</a>
+                <a href="#projects"><i class="fas fa-code"></i> Проекты</a>
+                <a href="#skills"><i class="fas fa-cogs"></i> Навыки</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="card">
+            <h2><i class="fas fa-star"></i> Обо мне</h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/150" alt="Моё фото" class="profile-img">
+                <div class="about-text">
+                    <p>Привет! Я начинающий веб-разработчик и этот сайт — моя первая работа на GitHub Pages.</p>
+                    <p>Здесь я буду публиковать свои проекты и эксперименты с кодом.</p>
+                    <a href="#contact" class="button">Связаться со мной</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="card">
+            <h2><i class="fas fa-project-diagram"></i> Мои проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Этот сайт</h3>
+                    <p>Мой первый сайт на GitHub Pages с использованием HTML и CSS</p>
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">GitHub Pages</span>
+                </div>
+                <div class="project-card">
+                    <h3>В процессе</h3>
+                    <p>Скоро здесь появятся новые интересные проекты</p>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">React</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="card">
+            <h2><i class="fas fa-chart-line"></i> Навыки</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <span>HTML5</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>CSS3</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>JavaScript</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 60%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Git</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside class="sidebar">
+        <div class="card">
+            <h3><i class="fas fa-bullhorn"></i> Последние обновления</h3>
+            <ul class="updates-list">
+                <li><i class="fas fa-check-circle"></i> Добавлен адаптивный дизайн</li>
+                <li><i class="fas fa-check-circle"></i> Улучшена навигация</li>
+                <li><i class="fas fa-check-circle"></i> Добавлены анимации</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h3><i class="fas fa-link"></i> Полезные ссылки</h3>
+            <ul class="links-list">
+                <li><a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                <li><a href="https://developer.mozilla.org" target="_blank"><i class="fas fa-code"></i> MDN Web Docs</a></li>
+                <li><a href="https://css-tricks.com" target="_blank"><i class="fab fa-css3-alt"></i> CSS Tricks</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Контакты</h3>
+            <div class="social-links">
+                <a href="mailto:your-email@example.com" class="social-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://github.com/ваш-логин" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-telegram"></i> Telegram
+                </a>
+            </div>
+            <p class="copyright">© 2024 Мой сайт на GitHub Pages. Все права защищены.</p>
+            <p class="counter">Посетителей сегодня: <span id="visitor-count">1</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
